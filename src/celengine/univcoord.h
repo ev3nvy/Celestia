@@ -135,7 +135,7 @@ class UniversalCoord
       */
     static UniversalCoord CreateKm(const Eigen::Vector3d& v)
     {
-        Eigen::Vector3d vUly = v * celestia::astro::microLightYearsToKilometers(1.0);
+        Eigen::Vector3d vUly = v * celestia::astro::kilometersToMicroLightYears(1.0);
         return UniversalCoord(vUly.x(), vUly.y(), vUly.z());
     }
 
